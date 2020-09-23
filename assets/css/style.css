@@ -6,7 +6,7 @@ body {
     margin: 25px auto;
     width: 50%;
     background-color: #f3f2f2;
-    padding: 20px;
+    padding: 30px;
 
 }
 
@@ -18,7 +18,7 @@ body {
 #branded {
     color: #f39c12;
 }
-i {
+.branding {
     margin-right: 5px;
     color: #f39c12;
     border: 1px solid #f1c40f;
@@ -36,6 +36,21 @@ i {
     float: right;
 }
 
-.generator h2 {
+#leading-text {
     text-align: center;
+}
+
+input {
+    background-color: transparent;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%;
+}
+
+#options {
+    margin-top: 15px;
+}
+button {
+    color: #fff !important;
 }

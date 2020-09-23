@@ -15,36 +15,41 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><i class="fas fa-bolt"></i>Pass<span id="branded">Bolt</span></a>
+        <a class="navbar-brand" href="#"><i class="fas fa-bolt branding"></i>Pass<span id="branded">Bolt</span></a>
       </nav>
 
       <section class="generator">
-          <div class="container">
+          <div class="container" id="leading-text">
               
-              <h2><i class="fas fa-bolt"></i><br/>Strong Password Generator</h2>
+              <h1><i class="fas fa-bolt branding"></i><br/>Strong Password Generator</h1>
+              <p class="lead">Never reuse a password again!</p>
+          </div>
+          <div class="container">
               <div class="row">
                   <div class="col-md-12">
                       <div id="main-box">
                         <form>
                             <div class="row">
                               <div class="col">
-                                <input type="text" class="form-control">
+                                <input type="text" id="inputBox">
                               </div>
                               <div class="col">
-                                <button type="button" class="btn btn-warning">COPY THAT!</button>
+                                <button type="button" class="btn btn-dark" id="newPassword"><i class="fas fa-sync-alt"></i> New</button>
+
+                                <button type="button" class="btn btn-warning" id="copyClipboard"><i class="fas fa-clipboard-list"></i> Copy</button>
                               </div>
                             </div>
                           </form>
-                          <div class="row">
+                          <div class="row" id="options">
                             <div class="col">
                                 Length:
                             </div>
                       </div>
-
                   </div>
               </div>
               </div>
           </div>
+        </div>
       </section>
       
   <!-- Link our scripts -->
@@ -52,5 +57,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
