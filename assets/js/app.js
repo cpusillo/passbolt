@@ -8,7 +8,7 @@ generatePassword();
 
 function generatePassword(){
     var pword = (Math.random().toString(36).slice(2)) + (Math.random().toString(36).slice(2));
-    inputBox.textContent = pword;
+    inputBox.setAttribute('value', pword);
 
     lengthBox.textContent = pword.length;
 }
