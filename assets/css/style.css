@@ -1,13 +1,15 @@
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #ffffe696;
    
 }
 #main-box {
     margin: 25px auto;
     width: 50%;
-    background-color: #f3f2f2;
+    background-color: #f3f2f2be;
     padding: 30px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 
 }
 
@@ -57,6 +59,21 @@ body {
 }
 button {
     color: #fff !important;
+}
+
+#numInput {
+    background-color: transparent;
+    border: none;
+}
+
+.dangerous-hidden {
+    visibility: hidden;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
 }
 
 @media screen and (max-width: 768px) {

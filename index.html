@@ -44,8 +44,15 @@
                           </form>
                           <div class="row" id="options">
                             <div class="col">
-                                Length: <span id="lengthBox"> </span>
+                                Length: <input type="number" id="numInput" min="8" max="24" value="12"></input>
                             </div>
+                      </div>
+                      <div class="container">
+                        <div class="show-alert dangerous-hidden">
+                        <div class="alert alert-danger" role="alert">
+                          Howdy, bud! We recommend passwords over 8 characters long.
+                        </div>
+                      </div>
                       </div>
                   </div>
               </div>
@@ -61,6 +68,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pass.js"></script>
 </body>
 </html>
