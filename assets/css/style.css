@@ -37,14 +37,14 @@ body {
     text-align: center;
 }
 
-input {
+#inputBox {
     background-color: transparent;
     height: 35px;
     border: none;
     border-bottom: 1px solid #e7e7e7;
     width: 100%;
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 #button-controls {
@@ -57,4 +57,14 @@ input {
 }
 button {
     color: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+    .generator {
+        width: 100vw;
+    }
+
+    #main-box {
+        width: 100%;
+    }
 }
