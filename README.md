@@ -1,7 +1,8 @@
 # passbolt
 Never use the same password over and over again! Our app will generate a random password for you.
 
-[Click here to try it out!}(cpusillo.github.com/passbolt)
+[Click here to try it out!}(https://cpusillo.github.com/passbolt)
+
 
 ## How to use this app
 * A generic password is generated for you automatically.
