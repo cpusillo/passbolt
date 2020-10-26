@@ -65,7 +65,9 @@ button {
     background-color: transparent;
     border: none;
 }
-
+.passOptions {
+    padding-top: 10px;
+}
 .dangerous-hidden {
     visibility: hidden;
 }

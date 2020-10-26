@@ -42,9 +42,31 @@
                               </div>
                             </div>
                           </form>
-                          <div class="row" id="options">
+                          <div class="row passOptions">
                             <div class="col">
                                 Length: <input type="number" id="numInput" min="8" max="24" value="12"></input>
+                            </div>
+                                <div class="row" id="options">
+                                  <div class="col">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="incUpps" value="incUpps" checked>
+                                <label class="form-check-label" for="incUpps">Include Uppercase</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="incLows" value="incLows" checked>
+                                <label class="form-check-label" for="incLows">Include Lowercase</label>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="incNums" value="incNums" checked>
+                                <label class="form-check-label" for="incNums">Include Numbers</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="incChars" value="incChars" checked>
+                                <label class="form-check-label" for="incChars">Include Characters</label>
+                              </div>
+                            </div>
                             </div>
                       </div>
                       <div class="container">
@@ -68,6 +90,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   
-  <script src="assets/js/pass.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
