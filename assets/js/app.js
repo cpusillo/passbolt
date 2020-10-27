@@ -22,7 +22,9 @@ var passLength = 12;
 var allChecked = $(".form-check-input");
 var newPassword = $("#newPassword");
 
+// Set our default user state.
 var isUpper = true; var isLower = true; var isNumber = true; var isCharacter = true;
+getPassword(); // Generate a sample password upon page load.
 
 // Get our password length from the number input.
 passLengthInput.on("change", function () {
@@ -50,7 +52,7 @@ options.on("change", ".form-check-input", function(){
     getPassword();
 })
 
-getPassword();
+
 
 /*
     the getPassword() function generates the actual password.
@@ -58,6 +60,7 @@ getPassword();
 function getPassword() {
     resetPassword();
 
+    // Review our flags to determine which elements will be included
     if (isUpper){
         passString += pass.upperCase;
     } if (isLower){
@@ -67,7 +70,6 @@ function getPassword() {
     } if (isCharacter){
         passString += pass.special;
     }
-    console.log(passString);
 
         for (var i = 0; i < passLength; i++) {
             pWord += passString.charAt(Math.floor(Math.random() * passString.length));
@@ -76,6 +78,9 @@ function getPassword() {
 
 }
 
+/*
+    setPassword() simply "sets" our password onto the UI.
+*/
 function setPassword(){
     inputBox.attr('value', pWord);
 }
@@ -96,13 +101,12 @@ function resetPassword(){
     password box and stores it in the user's clipboard.
 */
   function copy(){
-    inputBox.select();
-    inputBox.setSelectionRange(0, 99999)
-    inputBox.execCommand("copy");
+    $("#inputBox").focus();
+	$("#inputBox").select();
+	document.execCommand('copy');
   }
 
 
 // Determine what our copy to clipboard button does.
 copyClipboard.on("click", copy);
-
 newPassword.on("click", getPassword);
