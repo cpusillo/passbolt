@@ -70,9 +70,15 @@ function getPassword() {
     isNumber ? passString += pass.numbers : "";
     isCharacter ? passString += pass.special : "";
 
+    // Validate the user's input, refresh the page.
+    if (passLength < 8 || passLength > 24){
+        alert("Please select a number between 8 and 24.")
+        location.reload();
+    } else {
     for (var i = 0; i < passLength; i++) {
         pWord += passString.charAt(Math.floor(Math.random() * passString.length));
     }
+}
 
     // Call setPassword() to actually append the password to the UI.
     setPassword(pWord);
