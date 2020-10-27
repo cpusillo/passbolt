@@ -98,7 +98,7 @@ function resetPassword(){
   function copy(){
     inputBox.select();
     inputBox.setSelectionRange(0, 99999)
-    document.execCommand("copy");
+    inputBox.execCommand("copy");
   }
 
 

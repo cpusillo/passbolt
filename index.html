@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Passbolt free password generator" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
-<title>PassBolt: Free password generator</title>
+  <title>PassBolt: Free password generator</title>
 </head>
+
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><i class="fas fa-bolt branding"></i>Pass<span id="branded">Bolt</span></a>
-      </nav>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><i class="fas fa-bolt branding"></i>Pass<span id="branded">Bolt</span></a>
+  </nav>
 
-      <section class="generator">
-          <div class="container" id="leading-text">
-              
-              <h1><i class="fas fa-bolt branding"></i><br/>Strong Password Generator</h1>
-              <p class="lead">Never reuse a password again!</p>
-          </div>
-          <div class="container">
+  <section class="generator">
+    <div class="container" id="leading-text">
+
+      <h1><i class="fas fa-bolt branding"></i><br />Strong Password Generator</h1>
+      <p class="lead">Never reuse a password again!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="main-box">
+            <form>
               <div class="row">
-                  <div class="col-md-12">
-                      <div id="main-box">
-                        <form>
-                            <div class="row">
-                              <div class="col-md-12">
-                                <input type="text" id="inputBox" readonly>
-                              </div>
-                            </div>
-                              <div class="row" id="button-controls">
-                              <div class="col-md-12">
-                                <button type="button" class="btn btn-dark" id="newPassword"><i class="fas fa-sync-alt"></i> New</button>
+                <div class="col-md-12">
+                  <input type="text" id="inputBox" readonly>
+                </div>
+              </div>
+              <div class="row" id="button-controls">
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-dark" id="newPassword"><i class="fas fa-sync-alt"></i>
+                    New</button>
 
-                                <button type="button" class="btn btn-warning" id="copyClipboard"><i class="fas fa-clipboard-list"></i> Copy</button>
-                              </div>
-                            </div>
-                          </form>
-                          <div class="row passOptions">
-                            <div class="col">
-                                Length: <input type="number" id="numInput" min="8" max="24" value="12"></input>
-                            </div>
-                                <div class="row" id="options">
-                                  <div class="col">
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="incUpps" value="incUpps" checked>
-                                <label class="form-check-label" for="incUpps">Include Uppercase</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="incLows" value="incLows" checked>
-                                <label class="form-check-label" for="incLows">Include Lowercase</label>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="incNums" value="incNums" checked>
-                                <label class="form-check-label" for="incNums">Include Numbers</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="incChars" value="incChars" checked>
-                                <label class="form-check-label" for="incChars">Include Characters</label>
-                              </div>
-                            </div>
-                            </div>
-                      </div>
-                      <div class="container">
-                        <div class="show-alert dangerous-hidden">
-                        <div class="alert alert-danger" role="alert">
-                          Howdy, bud! We recommend passwords over 8 characters long.
-                        </div>
-                      </div>
-                      </div>
+                  <button type="button" class="btn btn-warning" id="copyClipboard"><i class="fas fa-clipboard-list"></i>
+                    Copy</button>
+                </div>
+              </div>
+            </form>
+            <div class="row passOptions">
+              <div class="col">
+                Length: <input type="number" id="numInput" min="8" max="24" value="12"></input>
+              </div>
+              <div class="row" id="options">
+                <div class="col">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="incUpps" value="incUpps" checked>
+                    <label class="form-check-label" for="incUpps">Include Uppercase</label>
                   </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="incLows" value="incLows" checked>
+                    <label class="form-check-label" for="incLows">Include Lowercase</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="incNums" value="incNums" checked>
+                    <label class="form-check-label" for="incNums">Include Numbers</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="incChars" value="incChars" checked>
+                    <label class="form-check-label" for="incChars">Include Characters</label>
+                  </div>
+                </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
-      </section>
-      
+      </div>
+    </div>
+    </div>
+  </section>
+
   <!-- Link our scripts -->
   <script src="https://kit.fontawesome.com/8a95b1eafc.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  
+
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>
